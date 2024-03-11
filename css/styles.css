@@ -4,3 +4,14 @@
 
 /* Changing the main font and background colour */
 
+.footer {
+    background-color: #1d1c1c; 
+    color: #c84141; 
+}
+.footer-a {
+    color: yellow; 
+}
+.footer-a:hover {
+    color: yellow; 
+}
+
