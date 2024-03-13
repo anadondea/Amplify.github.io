@@ -15,3 +15,46 @@
     color: yellow; 
 }
 
+.navbar {
+    background-color: rgb(30, 30, 30) !important; 
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: rgb(186, 184, 184) !important; 
+}
+
+/* For the dropdown menu, if you want that in black as well */
+.navbar .dropdown-menu {
+    background-color: black;
+}
+
+.navbar .dropdown-item {
+    color: white;
+}
+
+.fst-italic {
+color: black;
+font-weight: bold;
+font-size: 60px;
+-webkit-text-stroke: 0.5px white;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-item {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    .navbar-nav .nav-link {
+      padding-left: 20px;
+    }
+    .navbar-nav .nav-item.show .dropdown-menu .dropdown-item {
+      padding-left: 40px;
+    }
+    .navbar-nav .nav-item.show .dropdown-menu .dropdown-item .dropdown-menu .dropdown-item {
+      padding-left: 60px;
+    }
+  }
+
+
+  
