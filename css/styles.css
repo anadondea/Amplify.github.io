@@ -31,13 +31,6 @@
 .navbar .dropdown-item {
     color: white;
 }
-
-.fst-italic {
-color: black;
-font-weight: bold;
-font-size: 60px;
--webkit-text-stroke: 0.5px white;
-}
   
 .background {
   background-image: url('https://lafransatravellers.com/wp-content/uploads/2019/03/actuacion-actuacion-en-vivo-artistas-1763075.jpg');
@@ -46,6 +39,19 @@ font-size: 60px;
   background-attachment: fixed;
 }
 
+@font-face {
+    font-family: 'amazdoomright'; 
+    src: url('/fonts/amazdoomright.ttf') format('truetype'); 
+}
+
+.coming-italic {
+    color: rgb(30, 30, 30);
+    font-weight: bold;
+    font-size: 100px;
+    -webkit-text-stroke: 0.05px rgb(175, 172, 172);
+    font-style: italic;
+    font-family: 'amazdoomright'; /
+}
 
 
   
