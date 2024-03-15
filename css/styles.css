@@ -38,23 +38,14 @@ font-weight: bold;
 font-size: 60px;
 -webkit-text-stroke: 0.5px white;
 }
+  
+.background {
+  background-image: url('https://lafransatravellers.com/wp-content/uploads/2019/03/actuacion-actuacion-en-vivo-artistas-1763075.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
-@media (max-width: 991px) {
-    .navbar-nav .nav-item {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-    .navbar-nav .nav-link {
-      padding-left: 20px;
-    }
-    .navbar-nav .nav-item.show .dropdown-menu .dropdown-item {
-      padding-left: 40px;
-    }
-    .navbar-nav .nav-item.show .dropdown-menu .dropdown-item .dropdown-menu .dropdown-item {
-      padding-left: 60px;
-    }
-  }
 
 
   
