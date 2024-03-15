@@ -40,6 +40,17 @@
   width: auto;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .img-fluid {
+      max-width: 50%; /* sau orice altă dimensiune care arată bine pe dispozitivele mobile */
+    }
+  }
+  
 @font-face {
     font-family: 'amazdoomright'; 
     src: url('/fonts/amazdoomright.ttf') format('truetype'); 
