@@ -33,10 +33,11 @@
 }
   
 .background {
-  background-image: url('https://lafransatravellers.com/wp-content/uploads/2019/03/actuacion-actuacion-en-vivo-artistas-1763075.jpg');
+  background-image: url('../images/background5.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  width: auto;
 }
 
 @font-face {
@@ -50,14 +51,6 @@
     font-size: 100px;
     -webkit-text-stroke: 0.05px rgb(175, 172, 172);
     font-style: italic;
-    font-family: 'amazdoomright';
+    font-family: 'amazdoomright'
 }
 
-@media (max-width: 768px) {
-    .coming-italic {
-        font-size: 50px; /* Mai mic pentru ecrane mai mici */
-        -webkit-text-stroke: 0.03px rgb(175, 172, 172);
-    }
-}
-
-  
