@@ -15,6 +15,12 @@
     color: yellow; 
 }
 
+@media (max-width: 768px) {
+    .footer {
+      max-width: 50%; 
+    }
+  }
+
 .navbar {
     background-color: rgb(30, 30, 30) !important; 
 }
@@ -23,7 +29,6 @@
     color: rgb(186, 184, 184) !important; 
 }
 
-/* For the dropdown menu, if you want that in black as well */
 .navbar .dropdown-menu {
     background-color: black;
 }
@@ -32,6 +37,12 @@
     color: white;
 }
   
+@media (max-width: 768px) {
+    .navbar {
+      max-width: 50%; /* sau orice altă dimensiune care arată bine pe dispozitivele mobile */
+    }
+  }
+
 .background {
   background-image: url('../images/background5.jpg');
   background-size: cover;
@@ -39,6 +50,11 @@
   background-attachment: fixed;
   width: auto;
 }
+@media (max-width: 768px) {
+    .background{
+      max-width: 50%; /* sau orice altă dimensiune care arată bine pe dispozitivele mobile */
+    }
+  }
 
 .img-fluid {
     max-width: 100%;
