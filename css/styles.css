@@ -1,8 +1,9 @@
-/* Importing a Google Font */
+/* Importing Google Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('/fonts/amazdoomright.ttf');
 
-/* Changing the main font and background colour */
+/* Changing the background */
 
 .footer {
     background-color: #1d1c1c; 
@@ -14,12 +15,6 @@
 .footer-a:hover {
     color: yellow; 
 }
-
-@media (max-width: 768px) {
-    .footer {
-      max-width: 50%; 
-    }
-  }
 
 .navbar {
     background-color: rgb(30, 30, 30) !important; 
@@ -37,11 +32,6 @@
     color: white;
 }
   
-@media (max-width: 768px) {
-    .navbar {
-      max-width: 50%; /* sau orice altă dimensiune care arată bine pe dispozitivele mobile */
-    }
-  }
 
 .background {
   background-image: url('../images/background5.jpg');
@@ -50,22 +40,12 @@
   background-attachment: fixed;
   width: auto;
 }
-@media (max-width: 768px) {
-    .background{
-      max-width: 50%; /* sau orice altă dimensiune care arată bine pe dispozitivele mobile */
-    }
-  }
 
 .img-fluid {
     max-width: 100%;
     height: auto;
   }
   
-  @media (max-width: 768px) {
-    .img-fluid {
-      max-width: 50%; /* sau orice altă dimensiune care arată bine pe dispozitivele mobile */
-    }
-  }
   
 @font-face {
     font-family: 'amazdoomright'; 
@@ -75,9 +55,13 @@
 .coming-italic {
     color: rgb(30, 30, 30);
     font-weight: bold;
-    font-size: 100px;
+    font-size: 5rem;
     -webkit-text-stroke: 0.05px rgb(175, 172, 172);
     font-style: italic;
     font-family: 'amazdoomright'
 }
-
+@media (max-width: 768px) {
+    .coming-italic {
+      font-size: 2rem; 
+    }
+}
