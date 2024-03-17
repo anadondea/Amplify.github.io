@@ -15,7 +15,12 @@
     <title>AMPLIFY website</title>
 </head> 
 <body class="background">
-  
+  <div class="content">
+    <video autoplay loop muted class="video-background">
+      <source src="https://www.shutterstock.com/shutterstock/videos/1058308921/preview/stock-footage-person-is-making-a-heart-sign-gesture-and-holding-hands-up-at-a-performance-rock-band-playing-a.webm" type="video/mp4">
+      <!-- Poți adăuga și alte surse pentru compatibilitate cross-browser -->
+      Your browser does not support the video tag.
+    </video>
    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
    <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
@@ -31,7 +36,7 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="our-story.html">Our story</a>
+            <a class="nav-link active accent-color" aria-current="page" href="our-story.html">Our story</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -122,7 +127,7 @@
                       </h6>
                       <p><i class="fas fa-home me-3"></i> The Netherlands, Breda</p>
                       <p class="d-flex justify-content-center align-items-center">
-                      <p> <i class="fas fa-envelope me-3"></i> amplify.branddevelopment@gmail.com</p>
+                      <p><i class="fas fa-envelope me-3"></i> amplify.branddevelopment@gmail.com</p>
                       </p>
                       <p><i class="fas fa-phone me-3"></i> + 31 224 577 98</p>
                   </div>
@@ -133,5 +138,6 @@
     </footer>
     <!-- End of Footer -->
 
+  </div>
 </body>
 </html>
