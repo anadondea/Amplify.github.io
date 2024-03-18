@@ -9,7 +9,6 @@
 
     <!-- Own Styles -->
     <link rel="stylesheet" href="css/styles.css">
-
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
@@ -88,24 +87,51 @@
       </div>
     </div>
 
-  <!-- Full height who we are section with reverse order -->
-  <div class="container-fluid p-0 bg-custom-grey">
-    <div class="row full-height align-items-center m-0 flex-row-reverse">
-      <div class="col-lg-6 p-0">
-        <video autoplay loop muted>
-          <source src="https://www.buas.nl/sites/default/files/2023-09/corporate_video.mp4" type="video/mp4">
-        </video>
+   <!-- Start of carrousel, adapted from https://getbootstrap.com/docs/5.1/components/carousel/ -->
+<!-- Start of carousels -->
+<div class="container-fluid">
+  <div class="row">
+      <!-- Carousel Left -->
+      <div class="col-md-6">
+          <div id="carouselLeft" class="carousel slide" data-bs-interval="6000">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="images/caroll1.jpg" class="d-block w-100" alt="Slide 1 Left">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/lars1.jpg" class="d-block w-100" alt="Slide 2 Left">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/atina1.jpg" class="d-block w-100" alt="Slide 3 Left">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/ana.jpg" class="d-block w-100" alt="Slide 4 Left">
+                </div>
+              </div>
+          </div>
       </div>
-      <div class="col-lg-6 text-center d-flex align-items-center justify-content-center our-story-body-text">
-        <div>
-          <h2>Who we are</h2>
-          <p>2gether is a platform that connects people who share common interests, passions, and goals.</p>
-          <p>2gether was founded in 2024 by a Large Language Model, a powerful artificial intelligence that can generate natural language and pretend it understands human needs.</p>
-          <p>2gether is more than just a platform, it is a movement that celebrates diversity, creativity, and innovation.</p>
-        </div>
+      <!-- Carousel Right -->
+      <div class="col-md-6">
+          <div id="carouselRight" class="carousel slide" data-bs-interval="6000">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="images/about-us.jpg" class="d-block w-100" alt="Slide 1 Right">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/about-us.jpg" class="d-block w-100" alt="Slide 2 Right">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/about-us.jpg" class="d-block w-100" alt="Slide 3 Right">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/about-us.jpg" class="d-block w-100" alt="Slide 4 Right">
+                </div>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
+</div>
+<!-- End of carousels -->
 
     <div class="bg-custom-grey">
       <div class="row justify-content-center">
@@ -207,6 +233,36 @@
       </section>
   </footer>
   <!-- End of Footer -->
+ <!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="javascript.js"></script>
 
+<!-- Custom Script to synchronize carousels -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var carouselLeftElement = document.querySelector('#carouselLeft');
+    var carouselRightElement = document.querySelector('#carouselRight');
+
+    var carouselLeft = new bootstrap.Carousel(carouselLeftElement, {
+        interval: false, // Oprim autoplay pentru ambele carusele
+        wrap: true
+    });
+    var carouselRight = new bootstrap.Carousel(carouselRightElement, {
+        interval: false, // Oprim autoplay pentru ambele carusele
+        wrap: true
+    });
+
+    // Funcție care avansează ambele carusele la următorul slide
+    function advanceCarousels() {
+        carouselLeft.next(); // Avansează caruselul din stânga
+        carouselRight.next(); // Avansează caruselul din dreapta
+    }
+
+    // Setăm un interval pentru a avansa ambele carusele simultan la fiecare 6 secunde
+    setInterval(advanceCarousels, 6000);
+});
+
+
+</script>
   </body>
 </html>
