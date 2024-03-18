@@ -61,7 +61,7 @@
   
 @font-face {
     font-family: 'amazdoomright'; 
-    src: url('/..fonts/amazdoomright.ttf') format('truetype'); 
+    src: url('./fonts/amazdoomright.ttf') format('truetype'); 
 }
 
 .coming-italic {
@@ -138,10 +138,6 @@
   object-fit: cover
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-}
 
 /*About Us carousel*/
 .carousel-item img {
