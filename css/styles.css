@@ -61,7 +61,7 @@
   
 @font-face {
     font-family: 'amazdoomright'; 
-    src: url('/fonts/amazdoomright.ttf') format('truetype'); 
+    src: url('/..fonts/amazdoomright.ttf') format('truetype'); 
 }
 
 .coming-italic {
@@ -70,12 +70,6 @@
     font-size: 5rem;
     -webkit-text-stroke: 0.05px rgb(175, 172, 172);
     font-style: italic;
-    font-family: 'amazdoomright'
-}
-@media (max-width: 768px) {
-    .coming-italic {
-      font-size: 2rem; 
-    }
 }
 
 /*Start of OUR STORY page*/
