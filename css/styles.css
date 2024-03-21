@@ -11,9 +11,22 @@
 }
 .footer-a {
     color: yellow; 
+    text-align: center;
+    display: block; 
+    margin: 0 10px;
 }
 .footer-a:hover {
     color: yellow; 
+}
+
+.footer-text {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 .navbar {
@@ -70,6 +83,7 @@
     font-size: 5rem;
     -webkit-text-stroke: 0.05px rgb(175, 172, 172);
     font-style: italic;
+    font-family: "New Rocker", system-ui;
 }
 
 /*Start of OUR STORY page*/
@@ -130,6 +144,7 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: yellow !important;
+  font-family: "Rubik", sans-serif;
 }
 
 .video-full-height {
