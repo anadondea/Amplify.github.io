@@ -30,7 +30,7 @@
 }
 
 .container-before-footer {
-  margin-bottom: 140px; 
+  margin-bottom: 200px; 
 }
 
 /* Nav Bar */
@@ -170,6 +170,10 @@
   object-fit: cover
 }
 
+.our-values-title {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
 /* popover */
 
 .container-popover {
