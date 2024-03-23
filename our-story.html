@@ -164,7 +164,7 @@
           data-bs-placement="bottom">Forming connections</button>
         </div>
         <div class="col-md-3">
-          <button type="button" class="btn btn-lg btn-danger w-100" data-bs-toggle="popover" data-bs-content="Laughing until it hurts with your friends, seeing your favorite rock star front row at a concert, saying yes to everything that makes your heart rush, chasing your dreams without stopping at nothing. This is what living life to the fullest means to us. Leave no room for regrets, only unforgettable moments. " 
+          <button type="button" class="btn btn-lg btn-danger w-100 popover-trigger popover-red" data-bs-toggle="popover" data-bs-content="Laughing until it hurts with your friends, seeing your favorite rock star front row at a concert, saying yes to everything that makes your heart rush, chasing your dreams without stopping at nothing. This is what living life to the fullest means to us. Leave no room for regrets, only unforgettable moments. " 
           data-bs-placement="bottom">Living life to the fullest </button>
         </div>
         <div class="col-md-3">
@@ -173,7 +173,7 @@
           data-bs-placement="bottom">Freedom of expression</button>
         </div>
         <div class="col-md-3">
-          <button type="button" class="btn btn-lg btn-danger w-100" data-bs-toggle="popover" title="Popover title" data-bs-content="What is life without those exciting, blood rushing moments? From the first song, the headbanging, the distortion of the guitar live, and the encore. It’s hard to explain with words; it's something to feel and experience. Concerts are what makes music and us come alive. After all, we're all here for a good time, not a long one." 
+          <button type="button" class="btn btn-lg btn-danger w-100 popover-trigger popover-red" data-bs-toggle="popover" title="Popover title" data-bs-content="What is life without those exciting, blood rushing moments? From the first song, the headbanging, the distortion of the guitar live, and the encore. It’s hard to explain with words; it's something to feel and experience. Concerts are what makes music and us come alive. After all, we're all here for a good time, not a long one." 
           data-bs-placement="bottom">Adrenaline Rush</button>
         </div>
       </div>
@@ -243,5 +243,50 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="javascript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="javascript.js"></script>
+
+<!-- Syncronized carousels -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var carouselLeftElement = document.querySelector('#carouselLeft');
+      var carouselRightElement = document.querySelector('#carouselRight');
+  
+      var carouselLeft = new bootstrap.Carousel(carouselLeftElement, {
+          interval: false,
+          wrap: true
+      });
+      var carouselRight = new bootstrap.Carousel(carouselRightElement, {
+          interval: false,
+          wrap: true
+      });
+  
+      function advanceCarousels() {
+          carouselLeft.next(); 
+          carouselRight.next(); 
+      }
+  
+      setInterval(advanceCarousels, 6000);
+      
+      // Popover 
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+      })
+  });
+  document.querySelectorAll('.popover-trigger').forEach(function (popoverTriggerEl) {
+  var popover = new bootstrap.Popover(popoverTriggerEl);
+  popoverTriggerEl.addEventListener('shown.bs.popover', function () {
+    var popoverId = popoverTriggerEl.getAttribute('aria-describedby');
+    var popoverEl = document.getElementById(popoverId);
+    if (popoverTriggerEl.classList.contains('popover-purple')) {
+      popoverEl.querySelector('.popover-body').classList.add('popover-body-purple');
+    } else if (popoverTriggerEl.classList.contains('popover-red')) {
+      popoverEl.querySelector('.popover-body').classList.add('popover-body-red');
+    }
+  });
+});
+
+</script> 
   </body>
 </html>

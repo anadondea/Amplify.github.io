@@ -179,12 +179,11 @@
   height: 100vh;
 }
 .popover-purple  {
-  background-color: #B18DD4;
+  background-color: #B18DD4 !important;
   border-color:#9658d4;
 }
-.popover-body {
-  background-color: #c84141;
-}
+
+
 .popover-header {
 background-color: black;
 }
@@ -201,7 +200,13 @@ background-color: black;
   border-color: #563d7c; 
   color: #1d1c1c;
 }
+.popover-body-purple {
+  background-color: #B18DD4 !important; /* Culoarea pentru fundalul mov */
+}
 
+.popover-body-red {
+  background-color: #c84141 !important; /* Culoarea pentru fundalul roșu */
+}
 
 /*About Us carousel*/
 .carousel-item img {
