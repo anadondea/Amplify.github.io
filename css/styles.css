@@ -1,9 +1,8 @@
 /* Importing Google Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
-@import url('/fonts/amazdoomright.ttf');
 
-/* Changing the background */
+/* Footer */
 
 .footer {
     background-color: #1d1c1c; 
@@ -14,13 +13,14 @@
     text-align: center;
     display: block; 
     margin: 0 10px;
+    font-family: Rubik; 
 }
 .footer-a:hover {
     color: yellow; 
 }
 
 .footer-text {
-  font-family: "Rubik", sans-serif;
+  font-family: rubik, sans-serif;
   text-align: center;
 }
 .social-icons {
@@ -29,6 +29,11 @@
   align-items: center; 
 }
 
+.container-before-footer {
+  margin-bottom: 140px; 
+}
+
+/* Nav Bar */
 .navbar {
     background-color: rgb(30, 30, 30) !important; 
     position: fixed; 
@@ -49,6 +54,7 @@
 .navbar .dropdown-item {
     color: yellow;
 }
+
 
 .video-background {
   position: fixed; 
@@ -95,6 +101,7 @@
   --bs-popover-body-padding-y: .5rem;
 }
 
+
 /*Start of OUR STORY page*/
 
 .full-height {
@@ -133,6 +140,7 @@
   
   .our-story-body-text {
     color: white;
+    margin-bottom: 60px;
   }
 
   .bg-custom-purple {
@@ -162,6 +170,38 @@
   object-fit: cover
 }
 
+/* popover */
+
+.container-popover {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+}
+.popover-purple  {
+  background-color: #B18DD4;
+  border-color:#9658d4;
+}
+.popover-body {
+  background-color: #c84141;
+}
+.popover-header {
+background-color: black;
+}
+/* Butonul standard roșu */
+.btn-danger:hover {
+  background-color: yellow; 
+  border-color: #d43f3a; 
+  color: #1d1c1c;
+}
+
+/* Butonul personalizat mov */
+.popover-purple:hover {
+  background-color: yellow; 
+  border-color: #563d7c; 
+  color: #1d1c1c;
+}
+
 
 /*About Us carousel*/
 .carousel-item img {
@@ -170,8 +210,10 @@
 }
 .carousel-inner {
   height: 500px; 
+  margin-bottom: 80px;
 }
 
 .carousel-item {
   height: 100%;
 }
+
