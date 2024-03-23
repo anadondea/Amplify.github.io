@@ -275,6 +275,15 @@
       })
   });
   document.querySelectorAll('.popover-trigger').forEach(function (popoverTriggerEl) {
+  new bootstrap.Popover(popoverTriggerEl);
+  popoverTriggerEl.addEventListener('shown.bs.popover', function () {
+    var popoverId = popoverTriggerEl.getAttribute('aria-describedby');
+    var popoverEl = document.getElementById(popoverId);
+    if (popoverTriggerEl.classList.contains('popover-purple')) {
+      popoverEl.style.backgroundColor = 'purple';
+    }
+  });
+  document.querySelectorAll('.popover-trigger').forEach(function (popoverTriggerEl) {
   var popover = new bootstrap.Popover(popoverTriggerEl);
   popoverTriggerEl.addEventListener('shown.bs.popover', function () {
     var popoverId = popoverTriggerEl.getAttribute('aria-describedby');
@@ -286,7 +295,7 @@
     }
   });
 });
-
+});
 </script> 
   </body>
 </html>

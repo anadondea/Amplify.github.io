@@ -196,7 +196,7 @@ background-color: black;
 
 /* Butonul personalizat mov */
 .popover-purple:hover {
-  background-color: yellow; 
+  background-color: yellow !important; 
   border-color: #563d7c; 
   color: #1d1c1c;
 }
