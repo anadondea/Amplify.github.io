@@ -75,6 +75,7 @@
 .img-fluid {
     max-width: 100%;
     height: auto;
+    margin-top: 100px;
   }
   
   
@@ -99,6 +100,13 @@
   --bs-popover-header-color: var(--bs-white);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: .5rem;
+}
+
+.black-bg-container {
+  background-color: rgb(30, 30, 30); 
+    color: white; /* Setează culoarea textului la alb, dacă ai text în interiorul container-ului */
+    padding: 300px; /* Adaugă spațiu în interiorul container-ului */
+   margin-top: 100px;
 }
 
 
@@ -130,12 +138,27 @@
     object-fit: cover; 
   }
 
+  .scroll-down {
+    font-family: "Rock Salt", cursive;
+    color: red;
+    margin-top: 100px;
+  }
+
+  .container-first {
+    margin-bottom: -10px;
+  }
+  .carousel-slide {
+    margin-right: -15px;
+    margin-left: -70px;
+  }
+
   .background2 {
     background-color: #1d1c1c;
   }
   
   .our-story-heading-text {
     color: white;
+    margin-top: 200px;
   }
   
   .our-story-body-text {
@@ -145,12 +168,13 @@
 
   .bg-custom-purple {
     background-color: #B18DD4;
+    margin-bottom: -20px;
   }
   .bg-custom-grey {
     background-color: #1d1c1c;
   }
- 
-  .button-color {
+  
+  .our-story-heading-text-button{
     background-color: yellow !important; 
     border-color: black;
   }
@@ -187,6 +211,7 @@
   margin-bottom: 50px;
   margin-top: 50px;
 }
+
 /* popover */
 
 .container-popover {
