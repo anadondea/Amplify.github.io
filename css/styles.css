@@ -105,8 +105,8 @@
 .black-bg-container {
   background-color: rgb(30, 30, 30); 
     color: white; /* Setează culoarea textului la alb, dacă ai text în interiorul container-ului */
-    padding: 300px; /* Adaugă spațiu în interiorul container-ului */
-   margin-top: 100px;
+    padding: 400px; /* Adaugă spațiu în interiorul container-ului */
+   margin-top: 50px;
 }
 
 
@@ -208,10 +208,19 @@
 }
 
 .our-values-title {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  position: relative; 
   margin-bottom: 50px;
   margin-top: 50px;
 }
 
+.click-buttons {
+  font-family: "Rock Salt", cursive;
+    color: yellow;
+}
 /* popover */
 
 .container-popover {
@@ -220,11 +229,6 @@
   align-items: center; 
   height: 100vh;
 }
-.popover-purple  {
-  background-color: #B18DD4 !important;
-  border-color:#9658d4;
-}
-
 
 .popover-header {
 background-color: black;
@@ -232,7 +236,6 @@ background-color: black;
 /* Butonul standard roșu */
 .btn-danger:hover {
   background-color: yellow; 
-  border-color: #d43f3a; 
   color: #1d1c1c;
 }
 
