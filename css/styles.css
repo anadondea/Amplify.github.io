@@ -20,7 +20,7 @@
 }
 
 .footer-text {
-  font-family: rubik, sans-serif;
+  font-family: "MedievalSharp", cursive;
   text-align: center;
 }
 .social-icons {
@@ -56,6 +56,7 @@
 }
 
 
+
 .video-background {
   position: fixed; 
   right: 0;
@@ -78,11 +79,6 @@
     margin-top: 100px;
   }
   
-  
-@font-face {
-    font-family: 'amazdoomright'; 
-    src: url('./fonts/amazdoomright.ttf') format('truetype'); 
-}
 
 .coming-italic {
     color: rgb(30, 30, 30);
@@ -100,6 +96,23 @@
   --bs-popover-header-color: var(--bs-white);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: .5rem;
+}
+
+.btn-primary {
+  background-color: #c84141;
+  border-color: black;
+  color: #1d1c1c;
+  width: 400px;
+  font-family: "Rock Salt", cursive;
+  font-weight: bold;
+  font-size:x-large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.btn-primary:hover {
+  background-color: yellow;
+  border-color: black;
+  color: #1d1c1c;
 }
 
 .bg-container {
@@ -169,12 +182,12 @@
     color: white;
     margin-top: 200px;
   }
-  
-  .our-story-body-text {
-    color: white;
-    margin-bottom: 60px;
+  .our-story-text-heading {
+    font-family: "MedievalSharp", cursive;
+    font-size: 100px;
+    margin-top: 50px;
   }
-
+  
   .bg-custom-purple {
     background-color: #B18DD4;
     margin-bottom: -20px;
@@ -186,15 +199,17 @@
   .our-story-heading-text-button{
     background-color: yellow !important; 
     border-color: black;
-  }
-
-  .our-story-heading-text-button {
     color: black;
+    font-family: "Rock Salt", cursive;
   }
+.our-story-text-body {
+  font-family: "Tauri", sans-serif;
+  margin-top: 30px;
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: yellow !important;
-  font-family: "Rubik", sans-serif;
+  font-family: "MedievalSharp", cursive;
 }
 
 .container-our-vision {
@@ -227,6 +242,7 @@
   position: relative; 
   margin-bottom: 50px;
   margin-top: 50px;
+  color: white;
 }
 
 .click-buttons {
@@ -242,9 +258,6 @@
   height: 100vh;
 }
 
-.popover-header {
-background-color: black;
-}
 /* Butonul standard roșu */
 .btn-danger:hover {
   background-color: yellow; 
@@ -259,10 +272,12 @@ background-color: black;
 }
 .popover-body-purple {
   background-color: #B18DD4 !important; /* Culoarea pentru fundalul mov */
+  font-family: "Tauri", sans-serif;
 }
 
 .popover-body-red {
   background-color: #c84141 !important; /* Culoarea pentru fundalul roșu */
+  font-family: "Tauri", sans-serif;
 }
 
 /*About Us carousel*/
@@ -279,3 +294,31 @@ background-color: black;
   height: 100%;
 }
 
+/* Start of Corporate page */
+
+.corporate-heading {
+  margin-top: 100px;
+}
+
+.text-decoration-none {
+  color: white;
+}
+
+.heading-corporate {
+  color: white;
+}
+
+.heading-corporate-1 {
+  color: #B18DD4;
+}
+
+.nav-link-corporate {
+  color: yellow;
+}
+.nav-link-title {
+  color: white;
+}
+
+.body-text-corporate {
+  color: white;
+}
