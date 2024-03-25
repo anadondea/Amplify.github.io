@@ -102,13 +102,22 @@
   --bs-popover-body-padding-y: .5rem;
 }
 
-.black-bg-container {
+.bg-container {
   background-color: rgb(30, 30, 30); 
     color: white; /* Setează culoarea textului la alb, dacă ai text în interiorul container-ului */
     padding: 400px; /* Adaugă spațiu în interiorul container-ului */
    margin-top: 50px;
 }
 
+#scroll-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: fixed;
+  will-change: transform; /* Optimizare pentru animație */
+}
 
 /*Start of OUR STORY page*/
 
@@ -188,6 +197,9 @@
   font-family: "Rubik", sans-serif;
 }
 
+.container-our-vision {
+  padding: 100px;
+}
 .vision-title {
   font-family: "MedievalSharp", cursive;
   font-weight: 400;
