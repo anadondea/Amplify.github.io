@@ -9,14 +9,14 @@
     color: #c84141; 
 }
 .footer-a {
-    color: yellow; 
+    color: #edf11a; 
     text-align: center;
     display: block; 
     margin: 0 10px;
     font-family: "Rock Salt", cursive;
 }
 .footer-a:hover {
-    color: yellow; 
+    color: #edf11a; 
 }
 
 .footer-text {
@@ -52,7 +52,7 @@
 }
 
 .navbar .dropdown-item {
-    color: yellow;
+    color: #edf11a;
 }
 
 
@@ -110,7 +110,7 @@
   padding-bottom: 10px;
 }
 .btn-primary:hover {
-  background-color: yellow;
+  background-color: #edf11a;
   border-color: black;
   color: #1d1c1c;
 }
@@ -197,7 +197,7 @@
   }
   
   .our-story-heading-text-button{
-    background-color: yellow !important; 
+    background-color: #edf11a !important; 
     border-color: black;
     color: black;
     font-family: "Rock Salt", cursive;
@@ -208,7 +208,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: yellow !important;
+  color: #edf11a !important;
   font-family: "MedievalSharp", cursive;
 }
 
@@ -248,7 +248,7 @@
 
 .click-buttons {
   font-family: "Rock Salt", cursive;
-    color: yellow;
+    color: #edf11a;
 }
 /* popover */
 
@@ -261,13 +261,13 @@
 
 /* Butonul standard roșu */
 .btn-danger:hover {
-  background-color: yellow; 
+  background-color: #edf11a; 
   color: #1d1c1c;
 }
 
 /* Butonul personalizat mov */
 .popover-purple:hover {
-  background-color: yellow !important; 
+  background-color: #edf11a !important; 
   border-color: #563d7c; 
   color: #1d1c1c;
 }
@@ -314,7 +314,7 @@
 }
 
 .nav-link-corporate {
-  color: yellow;
+  color: #edf11a;
 }
 .nav-link-title {
   color: white;
@@ -348,7 +348,19 @@
   font-size: medium;
 }
 .btn-primary-marketing:hover {
-  background-color: yellow;
+  background-color: #edf11a;
   border-color: black;
   color: #1d1c1c;
+}
+
+.medieval-sharp-font {
+  font-family: "MedievalSharp", cursive;
+}
+
+.rock-salt-font {
+  font-family: "Rock Salt", cursive;
+}
+
+.tauri-font {
+  font-family: "Tauri", sans-serif;
 }
