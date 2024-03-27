@@ -89,15 +89,6 @@
     font-family: "Rock Salt", cursive;
 }
 
-.btn-danger {
-  --bs-popover-max-width: 200px;
-  --bs-popover-border-color: var(--bd-violet-bg);
-  --bs-popover-header-bg: var(--bd-violet-bg);
-  --bs-popover-header-color: var(--bs-white);
-  --bs-popover-body-padding-x: 1rem;
-  --bs-popover-body-padding-y: .5rem;
-}
-
 .btn-primary {
   background-color: #c84141;
   border-color: black;
@@ -115,22 +106,39 @@
   color: #1d1c1c;
 }
 
-.bg-container {
-  background-color: rgb(30, 30, 30); 
-    color: white; /* Setează culoarea textului la alb, dacă ai text în interiorul container-ului */
-    padding: 400px; /* Adaugă spațiu în interiorul container-ului */
-   margin-top: 50px;
-}
 
-#scroll-container {
-  position: relative;
-  overflow: hidden;
-}
 
-.slide {
-  position: fixed;
-  will-change: transform; /* Optimizare pentru animație */
+.container-product {
+  background-color: #e1d4ee;
+  padding: 200px;
 }
+.container-product-2 {
+  background-color: #B18DD4;
+  padding: 200px
+}
+.container-product-3 {
+  background-color: #e1d4ee;
+  padding: 200px;
+  text-align: center;
+}
+.container-product-4 {
+  background-color:#B18DD4;
+  padding: 200px;
+  text-align: center;
+}
+.img-size {
+  max-width: 55%;
+  height: auto;
+}
+.center-custom {
+  margin-top: 100px;
+}
+.img-size-1 {
+  max-width: 70%;
+  height: auto; }
+  .align-custom {
+    margin-top: 50px;
+  }
 
 /*Start of OUR STORY page*/
 
@@ -265,20 +273,12 @@
   color: #1d1c1c;
 }
 
-/* Butonul personalizat mov */
-.popover-purple:hover {
-  background-color: #edf11a !important; 
-  border-color: #563d7c; 
-  color: #1d1c1c;
-}
-.popover-body-purple {
-  background-color: #B18DD4 !important; /* Culoarea pentru fundalul mov */
-  font-family: "Tauri", sans-serif;
-}
-
 .popover-body-red {
   background-color: #c84141 !important; /* Culoarea pentru fundalul roșu */
   font-family: "Tauri", sans-serif;
+}
+.popover-body {
+  background-color: #c84141 !important; /* Ajustează aceasta conform nevoilor tale */
 }
 
 /*About Us carousel*/
