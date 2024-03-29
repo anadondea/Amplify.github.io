@@ -204,6 +204,7 @@
     font-family: "MedievalSharp", cursive;
     font-size: 100px;
     margin-top: 50px;
+    color: white;
   }
   
   .bg-custom-purple {
@@ -379,8 +380,36 @@
   margin-top: 20px;
 }
 .em-spacing {
-  margin-top: 20px;}
+  margin-top: 20px;
+  color: #B18DD4;
+}
+.body-accent {
+  margin-top: 20px;
+  color:#edf11a;
+}
 
   .em-spacing1 {
-    margin-top: 40px
+    margin-top: 40px;
+  }
+  .bold-marketing {
+    font-weight: bold;
+  }
+
+  .image-size {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heading-appendix {
+    color:#c84141;
+  font-family: "MedievalSharp", cursive;
+  margin-top: 50px;
+  text-align: center;
+  }
+ 
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
   }
