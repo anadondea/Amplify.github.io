@@ -99,9 +99,6 @@
 }
 
 .btn-primary {
-  background-color: #c84141;
-  border-color: black;
-  color: #1d1c1c;
   width: 400px;
   font-family: "Rock Salt", cursive;
   font-weight: bold;
@@ -113,6 +110,11 @@
   background-color: #edf11a;
   border-color: black;
   color: #1d1c1c;
+}
+.btn-secondary {
+  font-family: "Rock Salt", cursive;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
 
@@ -194,7 +196,6 @@
   .background2 {
     background-color: #1d1c1c;
   }
-  
   .our-story-heading-text {
     color: white;
     margin-top: 200px;
@@ -214,14 +215,18 @@
   }
   
   .our-story-heading-text-button{
-    background-color: #edf11a !important; 
+    background-color: #c84141 !important; 
     border-color: black;
     color: black;
     font-family: "Rock Salt", cursive;
   }
+  .our-story-heading-text-button:hover {
+    background-color: #edf11a !important;
+  }
 .our-story-text-body {
   font-family: "Tauri", sans-serif;
   margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -283,11 +288,11 @@
 }
 
 .popover-body-red {
-  background-color: #c84141 !important; /* Culoarea pentru fundalul roșu */
+  background-color: #e17777 !important; /* Culoarea pentru fundalul roșu */
   font-family: "Tauri", sans-serif;
 }
 .popover-body {
-  background-color: #c84141 !important; /* Ajustează aceasta conform nevoilor tale */
+  background-color: #e17777 !important; /* Ajustează aceasta conform nevoilor tale */
 }
 
 /*About Us carousel*/
@@ -374,3 +379,9 @@
   font-family: "Tauri", sans-serif;
   margin-top: 20px;
 }
+.em-spacing {
+  margin-top: 20px;}
+
+  .em-spacing1 {
+    margin-top: 40px
+  }
