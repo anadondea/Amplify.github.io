@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 /* Footer */
 
 .footer {
@@ -88,13 +93,8 @@
     margin-top: 100px;
   }
 
-  
-  .img-size, .img-size-1 {
-    max-width: 100%;
-    height: auto;
-  }
 
-  /* Stiluri suplimentare pentru alinierea pe centru și dimensiunile textului */
+  
   @media (max-width: 768px) {
     .center-custom {
       text-align: center;
@@ -103,15 +103,28 @@
     .center-custom h2, .center-custom p, .center-custom h1 {
       font-size: larger;
     }
-
-    /* Pentru imagini mari pe ecran mic, poți ajusta dimensiunea aici */
     .img-size, .img-size-1 {
       width: 100%;
       height: auto;
+      margin: 0 auto 30px;
     }
-  }
+    }
+    .text-column-mobile {
+      order: 2;
+    }
+    @media (max-width: 767px) {
+      /* Stiluri pentru telefoane */
+      .row.flex-column-reverse-mobile {
+        flex-direction: column-reverse; /* Așează textul deasupra și imaginea dedesubt */
+      }
+    }
+    h2, p {
+      text-align: center; /* Centrarea textului pe telefon */
+    }
 
-
+.text-margin {
+  margin-left: 40px;
+}
 
 .coming-italic {
     color: rgb(30, 30, 30);
@@ -140,40 +153,60 @@
   font-weight: bold;
   font-size: 0.9em;
 }
+@media (max-width: 768px) {
+  /* Ajustează stilurile pentru dispozitive mobile */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  /* Ajustează stilurile pentru dispozitivele cu ecrane mai mari */
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
 
 
 
-.container-product {
-  background-color: #e1d4ee;
-  padding: 200px;
-}
-.container-product-2 {
-  background-color: #B18DD4;
-  padding: 200px
-}
-.container-product-3 {
-  background-color: #e1d4ee;
-  padding: 200px;
-  text-align: center;
-}
-.container-product-4 {
-  background-color:#B18DD4;
-  padding: 200px;
-  text-align: center;
-}
-.img-size {
-  max-width: 55%;
-  height: auto;
-}
-.center-custom {
+.text-container-mobile {
   margin-top: 100px;
 }
-.img-size-1 {
-  max-width: 70%;
-  height: auto; }
-  .align-custom {
-    margin-top: 50px;
+
+.img-size {
+  max-width: 35%;
+  margin-bottom: 40px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+.img-size1 {
+  max-width: 50%;
+  margin-bottom: 40px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+@media (min-width: 992px) { 
+  .full-height .col-lg-6 {
+    flex: 0 0 50%; 
+    max-width: 50%;
   }
+}
+
+.bg-purple1 {
+  background-color: #e1d4ee;
+}
+.bg-purple2 {
+  background-color: #B18DD4;
+}
+
 
 /*Start of OUR STORY page*/
 
