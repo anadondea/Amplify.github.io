@@ -87,7 +87,31 @@
     height: auto;
     margin-top: 100px;
   }
+
   
+  .img-size, .img-size-1 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Stiluri suplimentare pentru alinierea pe centru și dimensiunile textului */
+  @media (max-width: 768px) {
+    .center-custom {
+      text-align: center;
+    }
+
+    .center-custom h2, .center-custom p, .center-custom h1 {
+      font-size: larger;
+    }
+
+    /* Pentru imagini mari pe ecran mic, poți ajusta dimensiunea aici */
+    .img-size, .img-size-1 {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
 
 .coming-italic {
     color: rgb(30, 30, 30);
@@ -201,7 +225,7 @@
     margin-top: 200px;
   }
   .our-story-text-heading {
-    font-family: "MedievalSharp", cursive;
+    font-family: "New Rocker", system-ui;
     font-size: 100px;
     margin-top: 50px;
     color: white;
@@ -367,6 +391,10 @@
 
 .medieval-sharp-font {
   font-family: "MedievalSharp", cursive;
+  margin-top: 20px;
+}
+.new-rocker-font {
+  font-family: "New Rocker", system-ui;
   margin-top: 20px;
 }
 
