@@ -92,19 +92,46 @@ html, body {
     height: auto;
     margin-top: 100px;
   }
+.bg-grey {
+  background-color:#1d1c1c;
+}
+.container-content {
+  position: relative;
+  height: 1000px; /* Setează înălțimea dorită */
+  overflow: hidden;
+  z-index: 1; /* Asigură-te că restul conținutului este peste videoclip */
+}
 
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Asigură-te că videoclipul este în fundal */
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.container-content .btn-primary {
+  position: absolute;
+  left: 50%; /* centrează orizontal */
+  bottom: 400px; /* mărește această valoare pentru a muta butonul mai sus */
+  transform: translateX(-50%);
+}
 
   
+
   @media (max-width: 768px) {
     .center-custom {
       text-align: center;
     }
-
-    .center-custom h2, .center-custom p, .center-custom h1 {
-      font-size: larger;
-    }
     .img-size, .img-size-1 {
-      width: 100%;
+      width: 80%;
       height: auto;
       margin: 0 auto 30px;
     }
@@ -121,6 +148,11 @@ html, body {
     h2, p {
       text-align: center; /* Centrarea textului pe telefon */
     }
+    
+
+/* Restul stilurilor... */
+
+    
 
 .text-margin {
   margin-left: 40px;
@@ -229,12 +261,12 @@ html, body {
       max-width: 50%;
     }
   }
-  
   .full-height video {
-    height: 100vh;
     width: 100%;
-    object-fit: cover; 
+    height: auto;
+    object-fit: contain;
   }
+  
 
   .scroll-down {
     font-family: "Rock Salt", cursive;
@@ -391,10 +423,15 @@ html, body {
   color: #edf11a;
 }
 
-.body-text-corporate, .table-content a {
+.body-text-corporate {
   color: white !important;
-  font-family: "Tauri", sans-serif;
+  font-family: "Tauri", sans-serif !important;
 }
+.table-content a {
+  color: white !important;
+  font-family: "Tauri", sans-serif !important;
+}
+
 
 .table-content th,
 .table-content td {
@@ -455,13 +492,18 @@ html, body {
   .bold-marketing {
     font-weight: bold;
   }
-
-  .image-size {
-    width: 80%;
-    height: auto;
+  .img-size{
+    max-width: 100%; /* sau o altă valoare, cum ar fi 70%, 80%, etc., în funcție de cât de mare dorești să fie imaginea */
+    height: auto; /* menține proporția imaginii */
+    margin-bottom: 40px; /* menține această valoare pentru spațiu sub imagine */
     display: block;
-    margin-left: auto;
+    margin-left: auto; 
     margin-right: auto;
+  }
+  @media (min-width: 992px) { 
+    .img-size, .img-size1 {
+      max-width: 70%; /* sau orice altă valoare mai mare decât 35% sau 50% */
+    }
   }
   .heading-appendix {
     color:#c84141;

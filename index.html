@@ -33,16 +33,13 @@
 <title>AMPLIFY website</title>
 
 </head> 
-<body class="background">
+<body class="bg-grey">
   <div class="content">
-    <video autoplay loop muted class="video-background">
-      <source src="https://www.shutterstock.com/shutterstock/videos/1058308921/preview/stock-footage-person-is-making-a-heart-sign-gesture-and-holding-hands-up-at-a-performance-rock-band-playing-a.webm" type="video/mp4">
-    </video>
    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
    <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="images/small-logo.svg" width="80" alt="Breda University of Applied Sciences">
+        <img src="images/small-logo.png" width="80" alt="Breda University of Applied Sciences">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -86,55 +83,48 @@
   <!-- End of navigation bar -->
 
     <!--Start of the content-->
-    <div class="content">
-      <div class="container-content my-5">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 text-center">
-        <div class="h-100 d-flex flex-column justify-content-center align-items-center">
-          <img class="img-fluid mb-4" src="images/logo.svg" alt="Logo"> 
-            <div aria-busy="true" aria-describedby="progress-bar">
-                <div class="progress"></div>
-            </div>
-            <a href="#bg-section" class="btn btn-lg btn-danger m-1 d-block d-sm-inline btn-primary">Check our features</a>
-            <br>
-            <br>
-            </div>
-            </div>
-        </div>
-      </div>
+    <div class="container-content my-0">
+      <video autoplay muted loop id="myVideo">
+        <source src="images/landing-page-video.mp4" type="video/mp4">
+        Browserul tău nu suportă elementul video.
+      </video>
+      <a href="#our-features" class="btn btn-lg btn-danger m-1 d-block d-sm-inline btn-primary">Check our features</a>
     </div>
+    
 
 <!-- Our Features start -->
-<div class="container-fluid my-0 bg-purple1 text-center">
-  <div class="row justify-content-center align-items-center flex-column-reverse-mobile">
+<div id="our-features" class="container-fluid my-0 bg-purple1 text-center">
+  <div class="row justify-content-center align-items-center">
     <!-- Image Column -->
-    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+    <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
       <img src="images/screen-map.png" alt="Descriere relevantă" class="img-size img-fluid">
     </div>
-     <!-- Text Column -->
-    <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+    <!-- Text Column -->
+    <div class="col-12 col-md-4 text-md-center text-left">
       <h2>All your upcoming rock concerts in one place</h2>
-      <p>Amplify is the ultimate tool for hard rock fans. Take control of your concert experience by handpicking the shows you're gearing up for. Tell us your preferences, and we'll tailor your Amplify journey to match your unique style of rocking!</p>
+      <p>Amplify is the ultimate tool for hard rock fans...</p>
     </div>
   </div>
 </div>
 
-<div class="container-fluid my-0 bg-purple2 text-center">
+
+
+<div class="container-fluid-features my-0 bg-purple2 text-center">
   <div class="row justify-content-center align-items-center flex-column-reverse-mobile">
     <!-- Text Column -->
-    <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+    <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
       <h2>Connect with Hard Rock Fans Hitting the Same Shows</h2>
       <p>Based on your upcoming concert thrills, find and connect directly with fellow hard rock enthusiasts that share your concert vibe and band tastes. Find your people, your tribe.</p>
     </div>
     <!-- Image Column -->
-    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+    <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
       <img src="images/screen-match.png" alt="Descriere relevantă" class="img-size img-fluid">
     </div>
   </div>
 </div>
 
 
-<div class="container-fluid my-0 bg-purple1">
+<div class="container-fluid-features my-0 bg-purple1">
   <div class="row justify-content-center align-items-center flex-column-reverse-mobile">
     <!-- Text Column -->
     <div class="col-12 text-center text-container-mobile mb-3"> <!-- Adăugat mb-3 pentru a adăuga spațiu sub text -->
@@ -150,7 +140,7 @@
 
 
 
-<div class="container-fluid bg-purple2 text-light text-center py-2 py-md-4 py-lg-5">
+<div class="container-fluid-features bg-purple2 text-light text-center py-2 py-md-4 py-lg-5">
   <div class="row justify-content-center align-items-center">
     <div class="col-12 mx-auto py-5">
       <h1 class="display-3">Ready to rock out the concert experience?</h1>
