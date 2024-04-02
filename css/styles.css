@@ -124,17 +124,25 @@ html, body {
   transform: translateX(-50%);
 }
 
-  
+
+
+@media (min-width: 992px) { 
+  .img-size {
+    max-width: 150%; /* sau orice altă valoare mai mare decât 35% sau 50% */
+  }
+}
+@media (min-width: 992px) { 
+  .img-size1 {
+    max-width: 200%; /* sau orice altă valoare mai mare decât 35% sau 50% */
+    margin-right: 50%;
+  }
+}
 
   @media (max-width: 768px) {
     .center-custom {
       text-align: center;
     }
-    .img-size, .img-size-1 {
-      width: 80%;
-      height: auto;
-      margin: 0 auto 30px;
-    }
+  
     }
     .text-column-mobile {
       order: 2;
@@ -149,10 +157,29 @@ html, body {
       text-align: center; /* Centrarea textului pe telefon */
     }
     
+    @media (min-width: 992px) {
+      .img-fluid.img-size-desktop {
+        max-width: 80%; /* Mărit față de 60% pentru a face imaginea mai mare */
+        height: auto; /* Menține proporțiile imaginii */
+        margin: 0 auto; /* Centrează imaginea */
+        display: block; /* Necesar pentru a permite margin:auto să funcționeze */
+      }
+      
+      /* Ajustează textul pentru desktop, dacă este necesar */
+      .text-column-desktop {
+        text-align: center; /* Centrarea textului dacă este necesar */
+        padding: 0; /* Resetare padding dacă este necesar */
+      }
+    }
 
-/* Restul stilurilor... */
+/* Reguli media existente pentru mobile */
+@media (max-width: 768px) {
+  /* Stilurile pentru dispozitive mobile rămân neschimbate */
+  h2, p {
+    text-align: center; /* Centrarea textului pe telefon */
+  }
+}
 
-    
 
 .text-margin {
   margin-left: 40px;
@@ -212,18 +239,7 @@ html, body {
   margin-top: 100px;
 }
 
-.img-size {
-  max-width: 35%;
-  margin-bottom: 40px;
-  margin-left: auto; 
-  margin-right: auto;
-}
-.img-size1 {
-  max-width: 50%;
-  margin-bottom: 40px;
-  margin-left: auto; 
-  margin-right: auto;
-}
+
 
 @media (min-width: 992px) { 
   .full-height .col-lg-6 {
@@ -492,19 +508,7 @@ html, body {
   .bold-marketing {
     font-weight: bold;
   }
-  .img-size{
-    max-width: 100%; /* sau o altă valoare, cum ar fi 70%, 80%, etc., în funcție de cât de mare dorești să fie imaginea */
-    height: auto; /* menține proporția imaginii */
-    margin-bottom: 40px; /* menține această valoare pentru spațiu sub imagine */
-    display: block;
-    margin-left: auto; 
-    margin-right: auto;
-  }
-  @media (min-width: 992px) { 
-    .img-size, .img-size1 {
-      max-width: 70%; /* sau orice altă valoare mai mare decât 35% sau 50% */
-    }
-  }
+ 
   .heading-appendix {
     color:#c84141;
   font-family: "MedievalSharp", cursive;
