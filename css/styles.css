@@ -97,38 +97,61 @@ html, body {
 }
 .container-content {
   position: relative;
-  height: 1000px; /* Setează înălțimea dorită */
+  height: 990px; /* Setează înălțimea dorită */
   overflow: hidden;
   z-index: 1; /* Asigură-te că restul conținutului este peste videoclip */
 }
 
 #myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1; /* Asigură-te că videoclipul este în fundal */
+  width: 100vw; /* viewport width */
+  height: 56.25vw; /* 16:9 Aspect Ratio (divide by 9 and multiply by 16) */
+  max-height: 100vh;
   object-fit: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  position: absolute; /* Positioning it absolutely */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering the video */
+  margin-top: -20px;
 }
 
-.container-content .btn-primary {
+ .btn-primary {
   position: absolute;
   left: 50%; /* centrează orizontal */
-  bottom: 400px; /* mărește această valoare pentru a muta butonul mai sus */
+  bottom: 430px; /* mărește această valoare pentru a muta butonul mai sus */
   transform: translateX(-50%);
 }
+/* Make adjustments for small devices */
+@media (max-width: 767px) {
+  .container-content .btn {
+    width: auto; /* Adjust the button width as needed */
+    font-size: smaller; /* Adjust the font size for small devices */
+  }
+}
+/* Rules for screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+  .img-size, .img-fluid.img-size-desktop {
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Centers the image */
+  }
+  @media (min-width: 992px) { 
+    .img-size-desktop {
+      max-width: 100%; /* This allows the image to be as wide as its container */
+    }
+  }
+  
 
+  /* Ensure that both columns take the full width on mobile for stacking */
+  .container-fluid-features .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 
 
 @media (min-width: 992px) { 
   .img-size {
     max-width: 150%; /* sau orice altă valoare mai mare decât 35% sau 50% */
+    margin-left: -100px;
   }
 }
 @media (min-width: 992px) { 
@@ -153,9 +176,7 @@ html, body {
         flex-direction: column-reverse; /* Așează textul deasupra și imaginea dedesubt */
       }
     }
-    h2, p {
-      text-align: center; /* Centrarea textului pe telefon */
-    }
+   
     
     @media (min-width: 992px) {
       .img-fluid.img-size-desktop {
@@ -168,7 +189,6 @@ html, body {
       /* Ajustează textul pentru desktop, dacă este necesar */
       .text-column-desktop {
         text-align: center; /* Centrarea textului dacă este necesar */
-        padding: 0; /* Resetare padding dacă este necesar */
       }
     }
 
@@ -179,7 +199,25 @@ html, body {
     text-align: center; /* Centrarea textului pe telefon */
   }
 }
+@media (min-width: 992px) { 
+  .center-block {
+    display: block;  /* Use 'block' to enable margin auto */
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  /* Adjust the padding or margin as needed to move the text further to the right if needed */
+  .text-column-desktop {
+    padding-left: 60px; /* Or adjust as needed */
+  }
+}
+@media (min-width: 768px) {
+  /* Adjust the column size for larger devices to give more space to the image */
+  .text-md-center {
+    flex: 0 0 66.666667%; /* Adjust the column width. Example: 66.6% for 8 out of 12 columns */
+    max-width: 66.666667%; /* Adjust the column width. Example: 66.6% for 8 out of 12 columns */
+  }
+}
 
 .text-margin {
   margin-left: 40px;
