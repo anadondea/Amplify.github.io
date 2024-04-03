@@ -95,6 +95,18 @@ html, body {
 .bg-grey {
   background-color:#1d1c1c;
 }
+.btn-primary-landing {
+  position: absolute;
+  left: 50%; /* centrează orizontal */
+  bottom: 300px; /* mărește această valoare pentru a muta butonul mai sus */
+  transform: translateX(-50%);
+  width: 400px;
+  font-family: "Rock Salt", cursive;
+  font-weight: bold;
+  font-size:x-large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .container-content {
   position: relative;
   height: 990px; /* Setează înălțimea dorită */
@@ -114,12 +126,6 @@ html, body {
   margin-top: -20px;
 }
 
- .btn-primary {
-  position: absolute;
-  left: 50%; /* centrează orizontal */
-  bottom: 430px; /* mărește această valoare pentru a muta butonul mai sus */
-  transform: translateX(-50%);
-}
 /* Make adjustments for small devices */
 @media (max-width: 767px) {
   .container-content .btn {
@@ -329,7 +335,7 @@ html, body {
   }
 
   .container-first {
-    margin-bottom: -10px;
+    margin-bottom: -66px;
   }
   .carousel-slide {
     margin-right: -15px;
@@ -366,6 +372,7 @@ html, body {
   .our-story-heading-text-button:hover {
     background-color: #edf11a !important;
   }
+
 .our-story-text-body {
   font-family: "Tauri", sans-serif;
   margin-top: 30px;
