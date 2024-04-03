@@ -565,3 +565,20 @@ html, body {
   .carousel-control-next-icon {
     filter: invert(100%);
   }
+
+  .card-custom-bg {
+    background-color: #333; /* Schimbă aceasta în orice culoare dorești, de exemplu, un gri deschis */
+    /* Alte stiluri necesare pentru card, dacă sunt necesare */
+  }
+  .img-learning-points {
+    width: 200px; /* Setează lățimea dorită */
+  height: auto;
+  }
+  .img-learning-points-2 {
+    width: 400px; /* Setează lățimea dorită */
+  height: auto;
+  }
+  .img-final-lean-canvas {
+    width: 1500px; /* Setează lățimea dorită */
+  height: auto;
+  }
