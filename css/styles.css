@@ -18,15 +18,18 @@ html, body {
     text-align: center;
     display: block; 
     margin: 0 10px;
-    font-family: "Rock Salt", cursive;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+
 }
 .footer-a:hover {
     color: #edf11a; 
 }
 
 .footer-text {
-  font-family: "MedievalSharp", cursive;
+  font-family: "Archivo", sans-serif;
   text-align: center;
+  font-weight: 700;
 }
 .social-icons {
   display: flex;
@@ -52,6 +55,9 @@ html, body {
 
 .navbar-brand, .navbar-nav .nav-link {
     color: rgb(186, 184, 184) !important; 
+    font-family: "Archivo", sans-serif !important;
+    font-weight: 700 !important;
+
 }
 
 .navbar .dropdown-menu {
@@ -64,7 +70,8 @@ html, body {
 .btn-outline-success {
   color: #edf11a; 
   border-color: #c84141; 
-  font-family: "Rock Salt", cursive !important;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
 }
 .btn-outline-success:hover {
   background-color: #B18DD4 !important; 
@@ -98,7 +105,7 @@ html, body {
 .btn-primary-landing {
   position: absolute;
   left: 50%; /* centrează orizontal */
-  bottom: 300px; /* mărește această valoare pentru a muta butonul mai sus */
+  bottom: 250px; /* mărește această valoare pentru a muta butonul mai sus */
   transform: translateX(-50%);
   width: 400px;
   font-family: "Rock Salt", cursive;
@@ -374,9 +381,10 @@ html, body {
   }
 
 .our-story-text-body {
-  font-family: "Tauri", sans-serif;
+  font-family: "Archivo", sans-serif;
   margin-top: 30px;
   margin-bottom: 100px;
+  font-weight: 700;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -439,7 +447,8 @@ html, body {
 
 .popover-body-red {
   background-color: #e17777 !important; /* Culoarea pentru fundalul roșu */
-  font-family: "Tauri", sans-serif;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
 }
 .popover-body {
   background-color: #e17777 !important; /* Ajustează aceasta conform nevoilor tale */
@@ -486,11 +495,13 @@ html, body {
 
 .body-text-corporate {
   color: white !important;
-  font-family: "Tauri", sans-serif !important;
+ font-family: "Archivo", sans-serif !important;
+ font-weight: 700 !important;
 }
 .table-content a {
   color: white !important;
-  font-family: "Tauri", sans-serif !important;
+  font-family: "Archivo", sans-serif !important;
+  font-weight: 700;
 }
 
 
@@ -534,9 +545,10 @@ html, body {
   margin-top: 20px;
 }
 
-.tauri-font {
-  font-family: "Tauri", sans-serif;
+.archivo-font {
+  font-family: "Archivo", sans-serif;
   margin-top: 20px;
+  font-weight: 700;
 }
 .em-spacing {
   margin-top: 20px;
