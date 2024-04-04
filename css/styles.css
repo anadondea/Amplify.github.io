@@ -20,6 +20,7 @@ html, body {
     margin: 0 10px;
     font-family: "Archivo", sans-serif;
     font-weight: 700;
+    font-stretch: extra-expanded;
 
 }
 .footer-a:hover {
@@ -30,6 +31,7 @@ html, body {
   font-family: "Archivo", sans-serif;
   text-align: center;
   font-weight: 700;
+  font-stretch: extra-expanded;
 }
 .social-icons {
   display: flex;
@@ -57,6 +59,7 @@ html, body {
     color: rgb(186, 184, 184) !important; 
     font-family: "Archivo", sans-serif !important;
     font-weight: 700 !important;
+    font-stretch: extra-expanded !important;
 
 }
 
@@ -72,6 +75,7 @@ html, body {
   border-color: #c84141; 
   font-family: "Archivo", sans-serif;
   font-weight: 700;
+  font-stretch: extra-expanded;
 }
 .btn-outline-success:hover {
   background-color: #B18DD4 !important; 
@@ -305,8 +309,16 @@ html, body {
 .bg-purple2 {
   background-color: #B18DD4;
 }
-
-
+.features-body-text {
+  font-family: "Archivo", sans-serif;
+  font-stretch: extra-expanded; 
+}
+.features-heading-text {
+  font-family: "New Rocker", system-ui;
+}
+.google-play-badge {
+  width: 150px;
+}
 /*Start of OUR STORY page*/
 
 .full-height {
@@ -385,6 +397,7 @@ html, body {
   margin-top: 30px;
   margin-bottom: 100px;
   font-weight: 700;
+  font-stretch: extra-expanded;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -396,7 +409,7 @@ html, body {
   padding: 100px;
 }
 .vision-title {
-  font-family: "MedievalSharp", cursive;
+  font-family: "New Rocker", system-ui;
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
@@ -416,7 +429,7 @@ html, body {
 }
 
 .our-values-title {
-  font-family: "MedievalSharp", cursive;
+  font-family: "New Rocker", system-ui;
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
@@ -448,7 +461,8 @@ html, body {
 .popover-body-red {
   background-color: #e17777 !important; /* Culoarea pentru fundalul roșu */
   font-family: "Archivo", sans-serif;
-  font-weight: 700;
+  font-weight: 700 !important;
+  font-stretch: extra-expanded !important;
 }
 .popover-body {
   background-color: #e17777 !important; /* Ajustează aceasta conform nevoilor tale */
@@ -472,7 +486,7 @@ html, body {
 
 .corporate-heading {
   margin-top: 100px;
-  font-family: "MedievalSharp", cursive;
+  font-family: "New Rocker", system-ui;
 }
 
 .text-decoration-none {
@@ -496,12 +510,13 @@ html, body {
 .body-text-corporate {
   color: white !important;
  font-family: "Archivo", sans-serif !important;
- font-weight: 700 !important;
+ font-stretch: expanded !important;
 }
 .table-content a {
   color: white !important;
   font-family: "Archivo", sans-serif !important;
   font-weight: 700;
+  font-stretch: extra-expanded;
 }
 
 
@@ -549,6 +564,7 @@ html, body {
   font-family: "Archivo", sans-serif;
   margin-top: 20px;
   font-weight: 700;
+  font-stretch: extra-expanded;
 }
 .em-spacing {
   margin-top: 20px;
