@@ -35,42 +35,42 @@
      <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
   
      <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="images/small-logo.png" width="80" alt="Breda University of Applied Sciences">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active accent-color" aria-current="page" href="our-story.html">OUR STORY</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCorporate" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            CORPORATE
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownCorporate">
-            <li><a class="dropdown-item" href="corporate.html#content">CONTENT</a></li>
-            <li><a class="dropdown-item" href="corporate.html#production">PRODUCTION</a></li>
-            <li><a class="dropdown-item" href="corporate.html#marketing">MARKETING</a></li>
-            <li><a class="dropdown-item" href="corporate.html#management">MANAGEMENT</a></li>
-            <li><a class="dropdown-item" href="corporate.html#appendix">APPENDIX</a></li>
-          </div>
-        </li>
+     <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/small-logo.png" width="80" alt="Breda University of Applied Sciences">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active accent-color" aria-current="page" href="our-story.html">OUR STORY</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCorporate" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CORPORATE
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownCorporate">
+                <li><a class="dropdown-item" href="corporate.html#content">CONTENT</a></li>
+                <li><a class="dropdown-item" href="corporate.html#production">PRODUCTION</a></li>
+                <li><a class="dropdown-item" href="corporate.html#marketing">MARKETING</a></li>
+                <li><a class="dropdown-item" href="corporate.html#management">MANAGEMENT</a></li>
+                <li><a class="dropdown-item" href="corporate.html#appendix">APPENDIX</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-    </div>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+    </nav>
 <!-- End of navigation bar -->
 
 
@@ -241,7 +241,7 @@
           <h2 class="heading-corporate">Production</h2>
           <h4 id="design-elements" class="heading-corporate-1">Design Elements</h4>
           <h4>Color palette</h4>
-              <div class="list-unstyled">
+              <ul class="list-unstyled">
                 <li>
                   <span class="border border-secondary rounded px-2 me-1" style="background-color: #B42525;"></span>
                   #B42525
@@ -275,6 +275,7 @@
             
             
             <li>The typeface used for the header is Archivo 700 Bold. To emphasize the difference between the body font and the header, all of the headings are written in capital letters. To allow for a more artistic approach regarding the visuals, we used the same typeface in different styles. However, the fonts are more relaxed to make it easier on the eyes. As a result, the strength remains in the visuals and graphics, while the simpler fonts provide a better balance.</li>
+              </ul>
             <h4 class="em-spacing1">User interface patterns</h4>
             <h5><b>The structure of the navigation and content</b></h5>
             <em>The navigation Is designed in order to not be too harsh on the eye. The content on the pages is distributed in a balanced way: if a section presents more colors, text or pictures, the second section that follows after is more light, and not too crowded, in order for the user to not get overwhelmed by the amount of information or design. The colors give the user a funk experience. The information is placed in the middle, in order to be readable for the user and to not miss it. Clear navigation and a logical Information Architecture ensure the user can intuitively browse the website without confusion. This includes a clear hierarchy, easy-to-understand menu labels, and a search function, all of which contribute to a positive user experience by minimizing effort and frustration.</em>
@@ -371,12 +372,12 @@
             <br>
             <br>
             <a class="nav-link-corporate" href="appendix/app-nav-flowchart.pdf">Check out Appendix 5 for the prototype of the app as well as the navigation flowchart </a>
-              </div>
+              </ul>
           <br>
           <br>
           <div>
           <h4 id="production-2" class="heading-corporate-1">Credits</h4>
-          <div>
+          <ul>
             <li>HTML <strong>templates</strong> (<a class="nav-link-corporate" href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">buas-media-interactive/prj4-group-template</a>)</li>
             <br>
             <em><strong>Video's sources that were used for the visuals: </strong> </em>
@@ -393,7 +394,7 @@
           <li>Google Play icon: https://play.google.com/intl/en_us/badges/ </li>
         
           <p><strong>ChatGPT is used for verifing errors within the code, as well as for the javascript. </strong> </p>
-          </div>
+          </ul>
  
           <br>
           <h4 id="production-3" class="heading-corporate-1">Testing Report</h4>
@@ -601,6 +602,7 @@
             <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="appendix/second-calendar.pdf" allowfullscreen="allowfullscreen" allow="fullscreen">
     </iframe>
   </div>
+  <ul>
   <a href="appendix/second-calendar.pdf">Content Calendars</a>
               <li class="bold-marketing">First content calendar:</li>
             <p>The first few posts were posted at 1pm, 3pm, 6pm and 9 pm in order to determine at what time our posts receive the most engagement. After this we determined that posting posts and reels at 6pm and posting stories at 3pm was the best. 
@@ -663,6 +665,7 @@
           <li>Have at least 3 saves on our posts and reels by April 31st, 2024.</li>
           <li>Have at least 2 shares per post on Instagram by April 31st, 2024</li>
           <br>
+  </ul>
           <div>
             <img class="img-fluid" src="images/last-content-calendar.png" alt="Placeholder Image">
           </div>
@@ -1011,6 +1014,7 @@
           </div>
           <br>
           <br>
+          <ul>
           <h4>Problem:</h4>
           <li>Out of all the interviews we did, which were 10 in total, these 4 problems were the most prevalent in all of them. Some we already knew, others not, but for all of them it became more clear that they pose a real problem within the hard rock community.</li>
           <p>Existing Alternatives:</p>
@@ -1075,6 +1079,7 @@
                           <li>Gross Margin: When taking the costs and revenue into account and that we are looking at our first year of operation, we assume that we will have a loss. The estimated gross margin is calculated as followed:
                             (9,18 x 365) + (250 x 60) = 18.350,70 : 100 x 108 = 19.818,76 – 27.615 = -7.796,24 euros
                             </li>
+          </ul>
           <br>
           <br>
           <h4><b>Validation of Assumptions</b></h4>
@@ -1082,19 +1087,24 @@
           <p>To determine the right problem to fix with our product, we conducted 10 problem interviews with Hard Rock fans. Within the interviews we concluded the following problems/insights:</p>
           <p>1. Problem Interviews Atina:</p>
           <p>Interview with Nikoloz:          </p>
+          <ul>
           <li>He used to be harassed for being a metal head.
           </li>
           <li>He thinks the community could improve by not caring about what other people listen to. Because sometimes the community is not united because there's so many different genres of rock And everyone thinks their genre is better.
           </li>
+          </ul>
           <p>Interview with Pavel:
           </p>
+          <ul>
           <li>He has been to only one concert but would like to go to more. He had a pleasant experience. He went with a friend.
           </li>
           <li>He feels that new bands lack variety.</li>
           <li>He is not engaged in the community, but he would like to be in. He wants to go to more concerts and events.</li>
+          </ul>
           <br>
           <p>2. Problem Interviews Ana:</p>
           <p>Interview with Alex Rico:</p>
+          <ul>
           <li>He hates the commercialization and mainstreaming of Rock.</li>
           <li>He wants to be more connected to the people of the Rock community by having gatherings.</li>
           <li>He wants to do more around Rock with his friends, but does not know what.
@@ -1105,13 +1115,17 @@
           </li>
           <li>He has a problem finding new music. He tends to hate his playlist, because he listens so much to it.
           </li>
+          </ul>
           <p>Interview with Emil:</p>
+          <ul>
           <li>He does not like when people judge each other for the music they pick or like.</li>
           <li>He sometimes goes to concerts alone to meet people there. He makes friends and connects with people at concerts. When he goes to concerts with friends he builds a deeper connection with them.
           </li>
+          </ul>
           <br>
           <p>3. Problem Interviews Caroll-Ann            :</p>
           <p>Interview Felix:</p>
+          <ul>
           <li>He wants to find his way deeper into Rock, because there is more for him to discover regarding it.</li>
           <li>He is not as engaged within the Rock community as he would like to be.
           </li>
@@ -1120,23 +1134,30 @@
           </li>
           <li>A lot of concerts are not cheap.
           </li>
+          </ul>
           <p>Interview Jaap:</p>
+          <ul>
           <li>He says that there is not a lot of connection during a concert between the concert-goers, and only really with the people you were going to go there in the first place.</li>
           <li>He believes that there is a lot of misogyny in the Rock scene. There are a lot of old people who believe that their generation of Rock music is the best and they only criticise the newer generations of Rock.</li>
+          </ul>
           <br>
           <p>4. Problem Interviews Lars:</p>
           <p>Interview Nils:</p>
+          <ul>
           <li>He never goes to a concert alone, because he prefers to go with others.</li>
           <li>He thinks concerts and festivals which take place in the heat should focus more on easy to access sources of water.</li>
           <li>He does not like how some people put music in certain boxes, when they decide what is and isn’t Rock. There is a lot of gatekeeping</li>
           <li>He is not at all engaged with the Hard Rock community, because he is very busy. He wants to interact more with people who enjoy the same music.</li>
           <li>He bought to much concert merchandise to a point it did not fit in his closet anymore
           </li>
+          </ul>
           <p>Interview Wouter:</p>
+          <ul>
           <li>He is not as engaged within the community as he would like to be.
           </li>
           <li>He feels that (some) people within the community can unfairly judge the artis</li>
           <li>He wishes to be more social at concerts.</li>
+          </ul>
           <br>
           <br>
           <h4>Value Proposition and Business Plan:</h4>
@@ -1154,11 +1175,11 @@
             <br>
             <h4><b>Existing Alternatives:</b></h4>
             <p>As mentioned in the lean canvases, there are some alternatives people can use instead of Amplify:</p>
-            <li>Social Media</li>
+            <p>Social Media</p>
             <p>Social media is the perfect place for people to meet and create communities for every kind of topic. In our interviews the social media platforms that got mentioned the most were: Discord, Reddit and Instagram. Discord is a video, voice, and chat platform to use for every kind of community. Reddit is a platform on which communities can share pictures, texts, or videos with each other. Instagram is a platform to share videos and photos with your followers.</p>
-            <li>Tinder Festival Mode</li>
+            <p>Tinder Festival Mode</p>
             <p>Tinder is a dating app used for people to find dates or even their next partner on. Tinder also has a feature called Tinder Festival Mode. This mode matches people who are going to the same festival or love live music</p>
-            <li>Appic and Songkick</li>
+            <p>Appic and Songkick</p>
             <p>Appic is an app used to find clubs, parties, and festivals in the Netherlands and Belgium. Songkick is similar, but it is an app to find concerts of Warner Music Group.</p>
             <p>Although these alternatives all can be used by Hard Rock fans, they are not focused on connecting Hard Rock fans, Hard Rock concerts or even Hard Rock in general. They do not cater to the Hard Rock audience just like Amplify does.</p>
             <h4>Solution Interviews:</h4>
@@ -1171,6 +1192,7 @@
               <p><i>Solution Interviews Atina:</i></p>
               <p>Interview with Stelian :
               </p>
+              <ul>
               <li>He would like to see which people are going to the concert, instead of connecting to them on the app.
               </li>
               <li>He would use this app, because it is easy to use. Also because it is free, he would have it just in case. With these apps you never know when it will become popular. It would be an advantage for every Hard Rock fan to have.
@@ -1185,7 +1207,9 @@
               </li>
               <li>He thinks the app solves the problem. 
               </li>
+              </ul>
               <p>Interview with Preslav:</p>
+              <ul>
               <li>It would be cool to expand to neighbouring countries, like Belgium and Germany. There are also a lot of concerts and Hard Rock fans there.
               </li>
               <li>It would be cool to show upcoming tickets.
@@ -1202,9 +1226,11 @@
               </li>
               <li>He thinks the app's interface is pretty simple and straightforward. He finds it easy to navigate through the buttons and the menu. According to him the app works really naturally. He says it does not take a lot of time to understand how the app works.
               </li>
+              </ul>
               <br>
               <p><i>Solution Interviews Ana:</i></p>
               <p>Soultion Interview with Andrei:</p>
+              <ul>
               <li>He liked the map view as a feature the most. He finds it very interesting and interactive. He thinks he never found this feature on another app.
                 -He loves that he can choose his own dates and that he does not have to scroll through the dates when the concerts are taking place and that he has to see for himself if he can or cannot go.
                 -He misses a go back button in the beginning.
@@ -1212,7 +1238,9 @@
                 -He would use the app to try it out.
                 -He likes that the app is only for a specific target audience being Hard Rock fans.
                 </li>
+              </ul>
                 <p>Interview with Alexandra:</p>
+                <ul>
                 <li>She really likes the features, like seeing upcoming concerts and especially the match and rock features. 
                   -She thinks that the choose your favourite band and the how do you like to rock out part works better if you ask those after creating your account, because she thinks it is a bit confusing in the beginning. 
                   -She misses a go back button.
@@ -1222,16 +1250,20 @@
                   -Overall, she likes the idea, but there are small details that do not make sense when you first use the app, but learn how to use as you use the features more.
                   She thinks the app would solve the problem. It is easy to find people. It is also very interactive, which does not make the app boring. 
                   </li>
+                </ul>
                   <br>
                   <p><i>Solution Interviews Caroll-Ann:</i></p>
                   <p>Interview Diego:</p>
+                  <ul>
                   <li>He likes the idea of the app and said they would use it as a rock fan to find concert buddies.
                     He suggests including users' favourite songs of the band playing in their profile, not just general favourites.
                     He proposes using pictures of bands instead of text for certain elements,  like what Spotify does.
                     He likes that it is able to select favourite songs and artists on profiles.
                     He said that although hard rock is niche, fans would use an app focused on that genre.
                     </li>
+                  </ul>
                     <p>Interview with Laura:</p>
+                    <ul>
                     <li>She thinks the app serves as a solution to the problem.
                       She likes the questions at the beginning of the app to set up your account.
                       She likes the Tinder-like matching feature, because she can choose for herself who she goes to a concert with, instead of  an algorithm deciding for her.
@@ -1241,21 +1273,26 @@
                       She suggests putting a call or facetime feature in the chat function, for safety purposes if you want to see the person to know if they are real. Some type of verification before you make an account would be very helpful.
                       To keep people from going to other social media, she suggests to leave social media from the profile.
                       </li>
+                    </ul>
                       <br>
                     <p>Solution Interview Lars</p>
                     <p>Interview with Laurens:</p>
+                    <ul>
                     <li>He thinks that the app solves the problem, because it is clearly designed to connect people. And as a side thing you can find concerts.
                       He thinks the chat function is the best feature, because you can chat with multiple people. It is good to chat with people before you go to concerts with them.
                       He would say the specific set up to find people needs improvement, and to be more specific the match and rock feature. It feels a bit more like Tinder, so he sees the app more as a dating app. Besides that, he does not know how the match and rock question and match and rock feature work with each other if you want to go with more than 1 person to a concert.
                       Because the app feels like a dating app now, he would use it if he was single.
                       </li>
+                    </ul>
                       <p>Interview with Eliza:</p>
+                      <ul>
                       <li>She thinks the app could fix the problem.
                         She likes that we include that someone can choose how many people they want to go with to a concert (the how do you like to rock out section). But the lay-out of that section needs to be more defined. The numbers on there need to specify that it is about people, because she was a bit confused at first.
                         It is confusing where to find and make your own profile.
                         Personally she would like to already be in a group chat instead of one to one, because she is pretty shy and would not start talking. She wouldn’t use the chat function, because it is high maintenance to talk to a lot of people and would rather join a group.
                         If you could add your own friends, she would use the app. She would be more comfortable using the app if she could add her own friends in the chat.
                         </li>
+                      </ul>
 <br>
                         <p><a href="appendix/draft-lean-canvases.pdf" class="nav-link-corporate"><i>Check out Appendix 3 for the other versions of Lean Canvases AND for the audio recordings of each interview</i></a>
                         </p>
@@ -1300,7 +1337,6 @@
           </div>
                 </div>
          </div>
-      </div>
       </div>
           </main>
 <!-- Start of Footer -->
