@@ -421,10 +421,19 @@ html, body {
     font-stretch: extra-expanded;
   font-size: 60px;
   position: relative; 
-  color: white
-;
-
+  color: white;
 }
+.our-team {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-stretch: extra-expanded;
+font-size: 60px;
+position: relative; 
+color: white;
+text-align: center;
+margin-bottom: 50px;
+  }
+
 .vision-text {
   font-family: "Rock Salt", cursive;
   font-weight: 600;
