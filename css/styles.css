@@ -108,8 +108,8 @@ html, body {
 }
 .btn-primary-landing {
   position: absolute;
-  left: 50%; /* centrează orizontal */
-  bottom: 250px; /* mărește această valoare pentru a muta butonul mai sus */
+  left: 50%; 
+  bottom: 250px;
   transform: translateX(-50%);
   width: 400px;
   font-family: "Rock Salt", cursive;
@@ -120,10 +120,9 @@ html, body {
 }
 .container-content {
   position: relative;
-  height: 990px; /* Setează înălțimea dorită */
+  height: 990px; 
   overflow: hidden;
-  z-index: 1; /* Asigură-te că restul conținutului este peste videoclip */
-}
+  z-index: 1; }
 
 #myVideo {
   width: 100vw; /* viewport width */
@@ -167,13 +166,13 @@ html, body {
 
 @media (min-width: 992px) { 
   .img-size {
-    max-width: 150%; /* sau orice altă valoare mai mare decât 35% sau 50% */
+    max-width: 150%; 
     margin-left: -100px;
   }
 }
 @media (min-width: 992px) { 
   .img-size1 {
-    max-width: 200%; /* sau orice altă valoare mai mare decât 35% sau 50% */
+    max-width: 200%; 
     margin-right: 50%;
   }
 }
@@ -188,32 +187,29 @@ html, body {
       order: 2;
     }
     @media (max-width: 767px) {
-      /* Stiluri pentru telefoane */
       .row.flex-column-reverse-mobile {
-        flex-direction: column-reverse; /* Așează textul deasupra și imaginea dedesubt */
+        flex-direction: column-reverse; 
       }
     }
    
     
     @media (min-width: 992px) {
       .img-fluid.img-size-desktop {
-        max-width: 80%; /* Mărit față de 60% pentru a face imaginea mai mare */
-        height: auto; /* Menține proporțiile imaginii */
-        margin: 0 auto; /* Centrează imaginea */
-        display: block; /* Necesar pentru a permite margin:auto să funcționeze */
+        max-width: 80%; 
+        height: auto; 
+        margin: 0 auto; 
+        display: block; 
       }
       
-      /* Ajustează textul pentru desktop, dacă este necesar */
+
       .text-column-desktop {
-        text-align: center; /* Centrarea textului dacă este necesar */
+        text-align: center;
       }
     }
 
-/* Reguli media existente pentru mobile */
 @media (max-width: 768px) {
-  /* Stilurile pentru dispozitive mobile rămân neschimbate */
   h2, p {
-    text-align: center; /* Centrarea textului pe telefon */
+    text-align: center; 
   }
 }
 @media (min-width: 992px) { 
@@ -268,7 +264,6 @@ html, body {
   font-size: 0.9em;
 }
 @media (max-width: 768px) {
-  /* Ajustează stilurile pentru dispozitive mobile */
   h2 {
     font-size: 1.5rem;
   }
@@ -278,8 +273,7 @@ html, body {
   }
 }
 @media (min-width: 768px) {
-  /* Ajustează stilurile pentru dispozitivele cu ecrane mai mari */
-  h2 {
+    h2 {
     font-size: 2rem;
   }
 
@@ -311,10 +305,11 @@ html, body {
 }
 .features-body-text {
   font-family: "Archivo", sans-serif;
-  font-stretch: extra-expanded; 
 }
 .features-heading-text {
-  font-family: "New Rocker", system-ui;
+  font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-stretch: extra-expanded;
 }
 .google-play-badge {
   width: 150px;
@@ -349,8 +344,8 @@ html, body {
 
   .scroll-down {
     font-family: "Rock Salt", cursive;
-    color: red;
-    margin-top: 100px;
+    color: white;
+    margin-top: 25px;
   }
 
   .container-first {
@@ -369,7 +364,9 @@ html, body {
     margin-top: 200px;
   }
   .our-story-text-heading {
-    font-family: "New Rocker", system-ui;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-stretch: extra-expanded;
     font-size: 100px;
     margin-top: 50px;
     color: white;
@@ -398,6 +395,7 @@ html, body {
   margin-bottom: 100px;
   font-weight: 700;
   font-stretch: extra-expanded;
+  color: white;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -409,9 +407,9 @@ html, body {
   padding: 100px;
 }
 .vision-title {
-  font-family: "New Rocker", system-ui;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-stretch: extra-expanded;
   font-size: 60px;
   position: relative; 
   color: white
@@ -428,17 +426,6 @@ html, body {
   position: relative; 
 }
 
-.our-values-title {
-  font-family: "New Rocker", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 60px;
-  position: relative; 
-  margin-bottom: 50px;
-  margin-top: 50px;
-  color: white;
-}
-
 .click-buttons {
   font-family: "Rock Salt", cursive;
     color: #edf11a;
@@ -452,20 +439,19 @@ html, body {
   height: 100vh;
 }
 
-/* Butonul standard roșu */
 .btn-danger:hover {
   background-color: #edf11a; 
   color: #1d1c1c;
 }
 
 .popover-body-red {
-  background-color: #e17777 !important; /* Culoarea pentru fundalul roșu */
+  background-color: #e17777 !important; 
   font-family: "Archivo", sans-serif;
   font-weight: 700 !important;
   font-stretch: extra-expanded !important;
 }
 .popover-body {
-  background-color: #e17777 !important; /* Ajustează aceasta conform nevoilor tale */
+  background-color: #e17777 !important; 
 }
 
 /*About Us carousel*/
@@ -486,7 +472,9 @@ html, body {
 
 .corporate-heading {
   margin-top: 100px;
-  font-family: "New Rocker", system-ui;
+  font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-stretch: extra-expanded;
 }
 
 .text-decoration-none {
@@ -595,18 +583,17 @@ html, body {
   }
 
   .card-custom-bg {
-    background-color: #333; /* Schimbă aceasta în orice culoare dorești, de exemplu, un gri deschis */
-    /* Alte stiluri necesare pentru card, dacă sunt necesare */
+    background-color: #333; 
   }
   .img-learning-points {
-    width: 200px; /* Setează lățimea dorită */
+    width: 200px;
   height: auto;
   }
   .img-learning-points-2 {
-    width: 400px; /* Setează lățimea dorită */
+    width: 400px; 
   height: auto;
   }
   .img-final-lean-canvas {
-    width: 1500px; /* Setează lățimea dorită */
+    width: 1500px; 
   height: auto;
   }
